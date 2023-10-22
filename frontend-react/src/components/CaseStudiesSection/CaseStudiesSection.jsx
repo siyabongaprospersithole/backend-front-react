@@ -1,4 +1,7 @@
-
+/*
+We're constantly improving the code you see. 
+Please share your feedback here: https://form.asana.com/?k=uvp-HPgd3_hyoXRBw1IcNg&d=1152665201300829
+*/
 
 import PropTypes from "prop-types";
 import React from "react";
@@ -30,11 +33,14 @@ export const CaseStudiesSection = () => {
  controls={false}
  wrap={true}
  slide={true} // Use "slide" prop to display multiple items at a time
- className="custom-carousel mt-77" // Custom CSS class
+ className="custom-carousel mt-77 row" // Custom CSS class
 >
-        <Carousel.Item  style={{ margin: "0 10px" }} >
+        <Carousel.Item  
+        style={{ margin: "0 10px" }} 
+        className="col"
+        >
 
-        <div className="services-item-two">
+        <div className="services-item-two mt-35 ">
                 <div className="services-thumb-two">
                   <img src="/img/casestudies/1280x960-3.png" alt="Case Study Image 1" />
                   <div className="item-shape">
@@ -49,8 +55,11 @@ export const CaseStudiesSection = () => {
               </div>
         </Carousel.Item>
 
-        <Carousel.Item  style={{ margin: "0 10px" }}>
-        <div className="services-item-two">
+        <Carousel.Item   
+        style={{ margin: "0 10px" }} 
+        className="col"
+        >
+        <div className="services-item-two mt-35">
                 <div className="services-thumb-two">
                   <img src="/img/casestudies/1280x960-2.png" alt="Case Study Image 2" />
                   <div className="item-shape">
@@ -67,8 +76,12 @@ export const CaseStudiesSection = () => {
 
 
         
-        <Carousel.Item  style={{ margin: "0 10px" }}>
-        <div className="services-item-two">
+        <Carousel.Item  
+
+        style={{ margin: "0 10px" }} 
+        className="col"
+        >
+        <div className="services-item-two mt-35">
                 <div className="services-thumb-two">
                   <img src="/img/casestudies/1280x960-1.png" alt="Case Study Image 3" />
                   <div className="item-shape">
