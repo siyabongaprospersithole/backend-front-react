@@ -1,1 +1,0 @@
-export { AppDevIcon } from "./AppDevIcon";
