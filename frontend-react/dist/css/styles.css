@@ -1,0 +1,442 @@
+/* Enable smooth scrolling for HTML elements */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Styling for the navigation bar */
+.navbar {
+  background-color: #70259B;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  position: fixed; /* Fixed position at the top */
+  width: 100%; /* Make it full-width */
+  z-index: 1000; /* Ensure it's above other content */
+}
+
+/* Push the content down to avoid overlapping with the fixed navbar */
+body {
+  font-family: Inter;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
+}
+
+/* Styling for different heading elements */
+h1 {
+  font-family: Inter;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%; /* 67.2px */
+}
+
+h2 {
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 28.8px */
+}
+
+h3 {
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 28.8px */
+}
+
+/* Styling for an image grid */
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 40px); /* 5 columns, each 40px wide */
+  gap: 10px; /* Add spacing between images */
+  justify-content: space-evenly; /* Distribute space evenly between columns */
+}
+
+.image {
+  width: 200px;
+  height: 150px;
+}
+
+.image img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* Styling for the footer */
+.footer {
+  background-color: #430964;
+  padding: 20px;
+  color: #fff !important;
+}
+
+.footer .text-wrapper-6{
+
+  color: #fff  !important;
+ 
+}
+
+/* Styling for a subfooter section */
+.subfooter {
+  padding-top: 61px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 20px; /* Adjust spacing between items */
+}
+
+.footer-item {
+  flex: 1; /* Distribute available space evenly among items */
+  max-width: 385px; /* Set a maximum width for each item */
+  margin-top: 20px; /* Adjust the margin to your preference */
+}
+
+/* Increase the length of the last footer item */
+.footer-item:last-child {
+  flex-grow: 2; /* Increase the flex-grow value for the last item */
+}
+
+/* Styling for a custom button with purple theme */
+.btn-custom-purple {
+  border-radius: 16px;
+  border-color: var(--purple);
+  background: var(--purple);
+  color: #FFF;
+}
+
+/* Media query for a maximum width of 992px */
+@media (max-width: 992px) {
+  .overlap {
+      height: 540px;
+  }
+  .main-heading-wrapper {
+      top: 206px !important;
+  }
+}
+
+/* Media query for a maximum width of 768px */
+@media (max-width: 768px) {
+  .overlap {
+      height: 540px;
+  }
+  .main-heading-wrapper .main-heading {
+      font-size: 40px;
+  }
+}
+
+/* Media query for a maximum width of 576px */
+@media (max-width: 576px) {
+  .overlap {
+      height: 540px;
+  }
+  .main-heading-wrapper .main-heading {
+      font-size: 30px;
+  }
+  .main-heading-wrapper p {
+      width: 303px;
+  }
+}
+
+/* Styling for a clean navigation button */
+.navigation-clean-button {
+  background: #70259B;
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  color: #333;
+  border-radius: 0;
+  box-shadow: none;
+  border: none;
+  margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+  /* Adjust button padding for larger screens */
+  .navigation-clean-button {
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+  }
+}
+
+/* Styling for various navigation elements */
+.navbar-toggler {
+  border-color: var(--purple);
+}
+
+.navbar-nav {
+  margin: 0px auto !important;
+}
+
+.navigation-clean-button .navbar-brand {
+  font-weight: bold;
+  color: inherit;
+}
+
+.navigation-clean-button .navbar-brand:hover {
+  color: #222;
+}
+
+.navigation-clean-button .navbar-toggler {
+  border-color: var(--purple);
+}
+
+.navigation-clean-button .navbar-toggler:hover,
+.navigation-clean-button .navbar-toggler:focus {
+  background: none;
+}
+
+.navigation-clean-button .navbar-toggler {
+  color: #fff;
+}
+
+.navigation-clean-button .navbar-collapse,
+.navigation-clean-button .form-inline {
+  border-top-color: #ddd;
+}
+
+.navigation-clean-button .navbar-nav a.active,
+.navigation-clean-button .navbar-nav > .show > a {
+  background: none;
+  box-shadow: none;
+}
+
+.navigation-clean-button.navbar-light .navbar-nav a.active,
+.navigation-clean-button.navbar-light .navbar-nav a.active:focus,
+.navigation-clean-button.navbar-light .navbar-nav a.active:hover {
+  color: #ffffff;
+  box-shadow: none;
+  background: none;
+  pointer-events: none;
+}
+
+.navigation-clean-button.navbar .navbar-nav .nav-link {
+  padding-left: 18px;
+  padding-right: 18px;
+}
+
+.navigation-clean-button.navbar-light .navbar-nav .nav-link {
+  color: #ffffff;
+}
+
+.navigation-clean-button.navbar-light .navbar-nav .nav-link:focus,
+.navigation-clean-button.navbar-light .navbar-nav .nav-link:hover {
+  color: #37434d !important;
+  background-color: transparent;
+}
+
+.navigation-clean-button .navbar-nav > li > .dropdown-menu {
+  margin-top: -5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, .1);
+  background-color: #fff;
+  border-radius: 2px;
+}
+
+.navigation-clean-button .dropdown-menu .dropdown-item:focus,
+.navigation-clean-button .dropdown-menu .dropdown-item {
+  line-height: 2;
+  font-size: 14px;
+  color: #37434d;
+}
+
+.navigation-clean-button .dropdown-menu .dropdown-item:focus,
+.navigation-clean-button .dropdown-menu .dropdown-item:hover {
+  background: #eee;
+  color: inherit;
+}
+
+.navigation-clean-button .actions .login {
+  margin-right: 1rem;
+  text-decoration: none;
+  color: #465765;
+}
+
+
+.navigation-clean-button .navbar-text .action-button,
+.navigation-clean-button .navbar-text .action-button:active,
+.navigation-clean-button .navbar-text .action-button:hover {
+    background: #FFF;
+    border-radius: 20px;
+    font-size: inherit;
+    color: #70259B;
+    box-shadow: none;
+    border: none;
+    text-shadow: none;
+    padding: .5rem 1rem;
+    transition: background-color 0.25s;
+    font-size: inherit;
+  }
+
+
+  /* Styling for the 'hero' section */
+  #hero {
+    height: 600px;
+    width: 100%;
+  }
+
+  /* Margin classes for spacing */
+  .mt-50 {
+    margin-top: 50px;
+  }
+  .mt-35 {
+    margin-top: 35px;
+  }
+  .mb-35 {
+    margin-bottom: 35px;
+  }
+  .mt-77 {
+    margin-top: 77px;
+  }
+
+  .mt-97 {
+    margin-top: 97px;
+  }
+
+  .mt-100 {
+    margin-top: 100px;
+  }
+
+  .mb-100 {
+    margin-bottom: 100px;
+  }
+
+  /* Styling for the 'overlap' section */
+ 
+
+  /* Styling for the main heading in the 'overlap' section */
+  .main-heading-wrapper {
+    position: absolute !important;
+    top: 251px !important;
+    width: 507px !important;
+    color: #fff;
+  }
+
+  .heading-tag-rectangle {
+    width: 195px;
+    height: 29px;
+    flex-shrink: 0;
+  }
+
+  .heading-tag-3 {
+    height: 30px;
+    width: 185px;
+  }
+
+  .text-wrapper-6 {
+    color: #000000;
+    left: 72px;
+    position: absolute;
+    top: 0;
+    white-space: nowrap;
+  }
+
+  .rectangle-3 {
+    background-color: var(--purple);
+    width: 40px;
+    height: 5px;
+    position: relative;
+    top: 42%;
+  }
+
+  /* Media query for a minimum width of 1200px */
+  @media (min-width: 1200px) {
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl {
+      max-width: 76%;
+    }
+  }
+
+  /* Styling for service items */
+  .services-thumb-two {
+    position: relative;
+    border-radius: 8px;
+    border: 7px solid var(--tg-white);
+    box-shadow: 0 10px 30px #ced2dd;
+    overflow: hidden;
+    z-index: 1;
+    height: 398px;
+    width: 349px;
+  }
+
+  .services-thumb-two:after,
+  .services-thumb-two:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .services-item-two:hover .services-thumb-two:after {
+    opacity: 1;
+  }
+
+  .services-thumb-two .item-shape {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: -50px;
+    transition: 1s linear;
+    opacity: 0;
+  }
+
+  .services-item-two:hover .services-thumb-two .item-shape {
+    margin-top: 0;
+    opacity: 1;
+  }
+
+  .services-content-two {
+    position: absolute;
+    left: 30px;
+    right: 30px;
+    bottom: 25px;
+    z-index: 2;
+  }
+
+  .services-item-two:hover .services-content-two .icon {
+    background: var(--tg-primary-color);
+  }
+
+  .services-content-two .rectangle-3 {
+    margin-bottom: 15px;
+  }
+
+  .services-content-two .title {
+    margin-bottom: 15px;
+    color: #fff;
+  }
+
+  .services-content-two p {
+    margin-bottom: 15px;
+    color: #fff;
+    color: var(--shades-white, #FFF);
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    width: 294px;
+  }
+
+  /* Styling for the services area */
+  .services-area-three {
+    background: var(--tg-section-background);
+    position: relative;
+    z-index: 1;
+    padding: 120px 0 90px;
+  }
+
+  .overlap {
+    /*  background-image: url('../img/hero-image.png'); */
+      background-position: 50% 50%;
+      background-size: auto;
+      
+      height: 600px;
+      position: relative;
+      width: 100%;
+    }

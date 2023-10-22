@@ -1,0 +1,1 @@
+export { UxIcon } from "./UxIcon";

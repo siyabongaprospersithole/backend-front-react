@@ -1,0 +1,27 @@
+node_modules/
+
+frontend-react/node_modules/
+frontend-react/brands.db
+frontend-react/package-lock.json
+backend/target/
+backend/.DS_Store
+backend/package-lock.json
+backend/coverage/
+backend/.nyc_output/
+backend/.cache/
+backend/.parcel-cache/
+backend/dist/
+backend/lib/
+.vscode/
+backend/.idea/
+*.min.js
+# Logs
+backend/logs/
+backend/*.log
+backend/npm-debug.log*
+backend/yarn-debug.log*
+backend/yarn-error.log*
+backend/tmp
+backend/parcel-bundle-reports/
+backend/.verdaccio_storage/
+backend/sourcemap-info.json

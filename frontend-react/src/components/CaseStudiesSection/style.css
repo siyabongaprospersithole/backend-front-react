@@ -1,0 +1,24 @@
+.carousel-control-prev{
+    display: none;
+}
+.carousel-control-next{
+    display: none;
+}
+/* style.css */
+.custom-carousel .carousel-inner {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  
+  .custom-carousel .carousel-item {
+    width: 33.333%; /* Display 3 items at a time */
+    flex: none;
+  }
+  .carousel-item {
+    float: left;
+    width: 33.33% ;
+    margin-right: -100% ;
+    transition: transform .6s ease-in-out, -webkit-transform .6s ease-in-out;
+    display: inline;
+    position: relative !important;
+  }
