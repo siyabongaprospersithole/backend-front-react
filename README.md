@@ -1,9 +1,9 @@
-## Web APp Using Node as Backend And React as Front
+## Web App Using Node as Backend And React as Front
 
 
 
 ## Tech / Framework used | Node
-#### Built with:
+#### DevDep:
 - CORS
 - Express
 - Sqlite3
@@ -14,9 +14,15 @@
 
 ```bash
 # clone this repository
-git clone https://github.com/siyabongaprospersithole/react-app.git
+git clone https://github.com/siyabongaprospersithole/backend-front-react.git
 
 ```
+
+## cd to projects folder 
+```bash
+cd backend-front-react
+```
+
 ## Backend Setup - Node
 
 ```bash
